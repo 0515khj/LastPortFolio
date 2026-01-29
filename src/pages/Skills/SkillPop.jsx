@@ -5,7 +5,7 @@ const SkillPop = ({onClose}) => {
 
     const category = ['Web Development','Database','Design & Collaboration'];
 
-
+    
 
     return (
         <SkillPopWrap onClick={onClose}>

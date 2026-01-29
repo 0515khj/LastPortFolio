@@ -1,13 +1,11 @@
 [
   {
     "id": 1,
-    "title": "AI 챗봇 플랫폼",
-    "description": "자연어 처리 기반 고객 서비스 자동화 플랫폼",
+    "title": "~ Ing",
+    "description": " ~ Ing",
     "skills": [
       "React.js",
-      "TypeScript",
-      "Styled-components",
-      "OpenAI API"
+      "Styled-components"
     ],
     "img": [
       "/images/protest.png",
@@ -15,7 +13,7 @@
       "/images/protest.png"
     ],
     "details": {
-      "period": "2026.01.02 - 2026.01.30 (4주)",
+      "period": "2026.01.02 - 2026.01.30 (1주)",
       "type": "개인 프로젝트 (기여도 100%)",
       "role": "프론트엔드 개발, UI/UX 디자인, API 연동",
       "tool": "VS Code, Figma, Git, Postman"
@@ -54,7 +52,7 @@
     ],
     "details": {
       "period": "2025.12.01 - 2025.12.07 (1주)",
-      "type": "개인 프로젝트 (리뉴얼)",
+      "type": "개인 프로젝트 (기여도 100%)",
       "role": "메인/서브 페이지 퍼블리싱, 인터랙션 구현",
       "tool": "VS Code, Photoshop, Figma"
     },

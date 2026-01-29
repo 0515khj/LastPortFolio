@@ -23,7 +23,7 @@ const Header = () => {
     const clickMove = (id)=>{
         const getId = document.getElementById(id);
         if(getId){
-            const headerOffset = 80;
+            const headerOffset = 120;
             const position = getId.getBoundingClientRect().top;
             const offsetPosition = position + window.scrollY - headerOffset;
 
