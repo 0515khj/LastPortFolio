@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "HTML5",
+    "img": "/images/html.png",
+    "category": "Web Development"
+  },
+  {
+    "id": 2,
+    "title": "CSS3",
+    "img": "/images/css3.png",
+    "category": "Web Development"
+  },
+  {
+    "id": 3,
+    "title": "JavaScript",
+    "img": "/images/js.png",
+    "category": "Web Development"
+  },
+  {
+    "id": 4,
+    "title": "TypeScript",
+    "img": "/images/ts.png",
+    "category": "Web Development"
+  },
+  {
+    "id": 5,
+    "title": "React",
+    "img": "/images/react80.png",
+    "category": "Web Development"
+  },
+  {
+    "id": 6,
+    "title": "Node.js",
+    "img": "/images/node.png",
+    "category": "Web Development"
+  },
+  {
+    "id": 7,
+    "title": "MySQL",
+    "img": "/images/mysql.png",
+    "category": "Database"
+  },
+  {
+    "id": 8,
+    "title": "Firebase",
+    "img": "/images/firebase.png",
+    "category": "Database"
+  },
+  {
+    "id": 9,
+    "title": "Figma",
+    "img": "/images/figma.png",
+    "category": "Design & Collaboration"
+  },
+  {
+    "id": 10,
+    "title": "Photoshop",
+    "img": "/images/ps.png",
+    "category": "Design & Collaboration"
+  },
+  {
+    "id": 11,
+    "title": "GitHub",
+    "img": "/images/github.png",
+    "category": "Design & Collaboration"
+  },
+  {
+    "id": 12,
+    "title": "Slack",
+    "img": "/images/slack.png",
+    "category": "Design & Collaboration"
+  }
+]

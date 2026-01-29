@@ -1,0 +1,149 @@
+[
+  {
+    "id": 1,
+    "title": "AI 챗봇 플랫폼",
+    "description": "자연어 처리 기반 고객 서비스 자동화 플랫폼",
+    "skills": [
+      "React.js",
+      "TypeScript",
+      "Styled-components",
+      "OpenAI API"
+    ],
+    "img": [
+      "/images/protest.png",
+      "/images/protest.png",
+      "/images/protest.png"
+    ],
+    "details": {
+      "period": "2026.01.02 - 2026.01.30 (4주)",
+      "type": "개인 프로젝트 (기여도 100%)",
+      "role": "프론트엔드 개발, UI/UX 디자인, API 연동",
+      "tool": "VS Code, Figma, Git, Postman"
+    },
+    "urls": {
+      "github": "https://github.com/your-id/repo-name",
+      "demo": "https://your-deploy-url.com",
+      "notion": "https://notion.so/..."
+    },
+    "content": {
+      "overview": "사용자의 질문을 분석하고 자동으로 응답하는 AI 기반 챗봇 서비스입니다.",
+      "purpose": "기존의 정해진 답변만 하는 챗봇의 한계를 넘어, 자연스러운 대화가 가능한 서비스를 만들고자 했습니다. React의 상태 관리와 비동기 통신(API) 처리를 깊이 있게 학습하기 위해 시작했습니다.",
+      "features": [
+        "OpenAI API를 활용한 실시간 질의응답 구현",
+        "사용자 대화 내역 로컬 스토리지 저장 기능",
+        "모바일 환경을 고려한 반응형 채팅 UI",
+        "다크 모드 / 라이트 모드 테마 전환 기능"
+      ],
+      "troubleshooting": "API 응답 속도가 느릴 때 사용자가 멈춘 줄 아는 문제가 있어, 로딩 스피너와 타이핑 애니메이션을 추가하여 UX를 개선했습니다."
+    }
+  },
+  {
+    "id": 2,
+    "title": "FILA",
+    "description": "스포츠 웨어 브랜드 FILA 리뉴얼 프로젝트",
+    "skills": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Swiper.js"
+    ],
+    "img": [
+      "/images/fila.png",
+      "/images/fila.png",
+      "/images/fila.png"
+    ],
+    "details": {
+      "period": "2025.12.01 - 2025.12.07 (1주)",
+      "type": "개인 프로젝트 (리뉴얼)",
+      "role": "메인/서브 페이지 퍼블리싱, 인터랙션 구현",
+      "tool": "VS Code, Photoshop, Figma"
+    },
+    "urls": {
+      "github": "https://github.com/your-id/fila-renewal",
+      "demo": "https://your-deploy-url.com/fila"
+    },
+    "content": {
+      "overview": "글로벌 스포츠 브랜드 FILA의 메인 웹사이트를 트렌디하게 재해석한 리뉴얼 프로젝트입니다.",
+      "purpose": "기존 사이트는 정보 전달 위주의 정적인 레이아웃이라, MZ세대를 타겟으로 한 역동적이고 힙한 브랜드 이미지가 부족하다고 판단했습니다. 과감한 타이포그래피와 인터랙션을 더해 브랜드 아이덴티티를 강조했습니다.",
+      "features": [
+        "스크롤에 따라 이미지가 확대되는 Parallax 효과 구현",
+        "Swiper.js를 커스텀하여 룩북(Lookbook) 슬라이더 제작",
+        "CSS Grid를 활용한 비대칭 레이아웃 디자인",
+        "웹 표준 및 웹 접근성을 고려한 시맨틱 마크업"
+      ],
+      "troubleshooting": "고해상도 이미지가 많아 로딩이 느려지는 현상이 있어, 이미지 최적화(WebP 사용) 및 Lazy Loading 기법을 적용하여 초기 로딩 속도를 30% 개선했습니다."
+    }
+  },
+  {
+    "id": 3,
+    "title": "LEESLE",
+    "description": "모던 한복 브랜드 리슬 웹사이트",
+    "skills": [
+      "HTML5",
+      "CSS3",
+      "jQuery"
+    ],
+    "img": [
+      "/images/leesle.png",
+      "/images/leesle.png"
+    ],
+    "details": {
+      "period": "2025.11.10 - 2025.11.25 (2주)",
+      "type": "적응형 웹 구현",
+      "role": "퍼블리싱, 스크립트 구현",
+      "tool": "VS Code, Brackets"
+    },
+    "urls": {
+      "github": "https://github.com",
+      "demo": "https://netlify.com"
+    },
+    "content": {
+      "overview": "전통과 현대가 만나는 모던 한복 브랜드 '리슬'의 쇼핑몰 메인 페이지 구현입니다.",
+      "purpose": "한국적인 미를 살리면서도 쇼핑몰 본연의 기능인 '상품 가독성'을 높이는 데 주력했습니다. jQuery를 활용하여 동적인 메뉴와 탭 기능을 구현하여 사용자 경험을 높였습니다.",
+      "features": [
+        "jQuery를 이용한 아코디언 메뉴 및 탭 컨텐츠 구현",
+        "마우스 호버 시 상품 정보가 나타나는 카드 UI",
+        "브라우저 크기에 따라 레이아웃이 변하는 적응형 웹"
+      ],
+      "troubleshooting": "구형 브라우저(IE)에서도 깨짐 없이 보이도록 CSS 핵과 벤더 프리픽스를 적극적으로 활용하여 크로스 브라우징을 해결했습니다."
+    }
+  },
+  {
+    "id": 4,
+    "title": "Oblique Table",
+    "description": "가구 브랜드 오블리크테이블 쇼핑몰 구현",
+    "skills": [
+      "HTML5",
+      "SCSS",
+      "jQuery",
+      "Swiper.js"
+    ],
+    "img": [
+      "/images/oble.png",
+      "/images/oble.png"
+    ],
+    "details": {
+      "period": "2025.11.10 - 2025.11.14 (4일)",
+      "type": "쇼핑몰 웹사이트 디자인 & 퍼블리싱",
+      "role": "메인/상세 페이지 퍼블리싱, 인터랙션 구현",
+      "tool": "VS Code, Figma"
+    },
+    "urls": {
+      "github": "https://github.com/0515khj/oble",
+      "demo": "https://oble.vercel.app/"
+    },
+    "content": {
+      "overview": "미니멀 가구 브랜드 오블리크테이블의 쇼핑몰 메인 및 상품 상세 페이지를 구현한 프로젝트입니다.",
+      "purpose": "미니멀한 감성의 가구 브랜드를 나만의 스타일로 재해석하며 디자인 감각을 키우고, 동시에 배운 jQuery를 실무에 가깝게 활용해보고자 시작했습니다. 옵션 선택이나 탭 전환 같은 기능은 직접 찾아보며 구현했습니다.",
+      "features": [
+        "jQuery를 활용한 순차적 옵션 선택 시스템 구현 (상판소재 → 색상 → 프레임 → 사이즈 순서)",
+        "선택한 옵션에 따라 총 금액이 동적으로 계산되는 실시간 가격 업데이트 기능",
+        "Swiper.js를 커스텀하여 상품 상세 이미지 슬라이더 제작",
+        "상세페이지 탭 메뉴를 통한 상세정보/배송정보/AS정보 콘텐츠 전환",
+        "fetch API로 Header/Footer HTML 파일 분리 로드하여 코드 재사용성 향상",
+        "상품 카드 호버 시 이미지 전환 및 돋보기 아이콘 표시 인터랙션"
+      ],
+      "troubleshooting": "처음엔 옵션을 아무거나 먼저 클릭할 수 있어서 순서가 뒤죽박죽이 되는 문제가 있었습니다. `is-locked` 클래스를 활용해 이전 옵션을 선택해야만 다음 옵션이 활성화되도록 순차 잠금 로직을 추가해서 해결했습니다."
+    }
+  }
+]
