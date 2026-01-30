@@ -25,8 +25,13 @@ export const ProjectHeaderWrap = styled.div`
     }
      
     .menu-icon {
-        font-size: 32px;
+        font-size: 22px;
         cursor: pointer;
+
+        &:hover {
+            color:#9D84FF;
+
+        }
     }
 
     @media screen and (max-width:1200) {

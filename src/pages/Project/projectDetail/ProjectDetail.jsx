@@ -1,15 +1,17 @@
-import {  Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { ProjectDetailWrap } from './projectDetailStyle';
 import projects from '../../../assets/data/projectdata.json'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, FreeMode } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/free-mode';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import ProjectPreview from './ProjectPreview';
 
 const ProjectDetail = () => {
     const {id} = useParams();
+    const [modal,setModal] = useState(false);
 
     const project = projects.find(p => p.id === Number(id));
     
@@ -17,11 +19,20 @@ const ProjectDetail = () => {
             window.scrollTo(0,0)
     },[id])
 
+    useEffect(()=>{
+        if(modal){
+            document.body.style.overflow="hidden";
+        }else{
+            document.body.style.overflow="auto";
+        }
+        return () => {document.body.style.overflow='auto'};
+    },[modal])
+
     if (!project) return <div style={{color:'white', textAlign:'center', paddingTop:'200px'}}>존재하지 않는 프로젝트입니다.</div>;
 
 
     const mainBgImage = project.img[0];
-    const galleryImages = project.img.length > 1 ? project.img.slice(1) : [];
+    const galleryImages = project.img.length > 1 ? project.img.slice(0) : [];
 
     return (
         <ProjectDetailWrap>
@@ -51,13 +62,16 @@ const ProjectDetail = () => {
                             >Github</button>
                         )}
                     </div>
+                    <div className="mini-btn">
+                        <button className='figma-btn'>피그마 시안</button>
+                        <button className='preview-btn' onClick={()=>setModal(true)}>반응형 웹</button>
+                    </div>
                 </div>
             </div>
 
             <div className="content-section">
                 <div className="inner">
-                    
-                    {/* [1] 핵심 정보 그리드 (기간, 타입, 역할, 툴) */}
+                   
                     <div className="info-grid">
                         <div className="info-item">
                             <h3>PROJECT TYPE</h3>
@@ -77,10 +91,8 @@ const ProjectDetail = () => {
                         </div>
                     </div>
 
-                    {/* [2] 상세 줄글 내용 (기획의도, 주요기능, 문제해결) */}
                     <div className="detail-content">
                         
-                        {/* 1. 프로젝트 개요 & 기획 의도 */}
                         <div className="text-group">
                             <h2>Project Overview</h2>
                             <p className="main-desc">{project.content.overview}</p>
@@ -89,7 +101,6 @@ const ProjectDetail = () => {
                             <p>{project.content.purpose}</p>
                         </div>
 
-                        {/* 2. 주요 기능 (리스트 형태) */}
                         <div className="text-group">
                             <h3>⚙️ 주요 기능 및 특징</h3>
                             <ul className="feature-list">
@@ -99,7 +110,6 @@ const ProjectDetail = () => {
                             </ul>
                         </div>
 
-                        {/* 3. 문제 해결 (있으면 보여주고 없으면 숨김) */}
                         {project.content.troubleshooting && (
                             <div className="text-group">
                                 <h3>💡 문제 해결 (Troubleshooting)</h3>
@@ -108,18 +118,15 @@ const ProjectDetail = () => {
                         )}
                     </div>
 
-                    {/* [3] 갤러리 (기존 코드 유지) */}
                     {galleryImages.length > 0 && (
                         <div className="gallery-area">
-                            <h2>Screen Gallery</h2>
+                            <h2>Design Preview</h2>
                             <Swiper
-                                modules={[FreeMode, Autoplay]}
+                                modules={[Autoplay]}
                                 spaceBetween={20}
-                                slidesPerView={'auto'}
-                                freeMode={true}
-                                grabCursor={true}
-                                className="gallery-swiper"
-                            >
+                                slidesPerView={2}
+                                scrollbar={{el:".swiper-scrollbar"}}
+                                className="gallery-swiper">
                                 {galleryImages.map((img, index) => (
                                     <SwiperSlide key={index} className="slide-item">
                                         <img src={img} alt={`screenshot-${index}`} />
@@ -130,6 +137,15 @@ const ProjectDetail = () => {
                     )}
                 </div>
             </div>
+
+                    {modal && (
+                        <ProjectPreview
+                            project ={project}
+                            onClose={() => setModal(false)}
+                        />
+                    )}
+
+
         </ProjectDetailWrap>
     );
 };

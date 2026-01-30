@@ -9,7 +9,7 @@ const ProjectHeader = () => {
 
      const [scrollGo, setScrollGo] = useState(false);
      const [menu,setMenu] = useState(false);
-    
+        
         useEffect(() => {
             const scrollOnOff = () => {
                 if (window.scrollY > 50) {
@@ -23,7 +23,7 @@ const ProjectHeader = () => {
                 window.removeEventListener('scroll', scrollOnOff);
             }
         }, [])
-
+        
         useEffect(()=>{
             if(menu){
                 document.body.style.overflow = 'hidden';
