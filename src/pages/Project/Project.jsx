@@ -67,12 +67,13 @@ const Project = () => {
                     <div className='hoverImgOn'
                     style={{
                         position:'fixed',
+                        opacity:'0.9',
                         left:`${mouseXy.x - 100 }px`,
                         top:`${mouseXy.y - 100}px`,
                         pointerEvents:'none',
                     }}
                     >
-                        <img src={hoverImg.img[0]} alt={hoverImg.title} />
+                        <img src={hoverImg.img[1]} alt={hoverImg.title} />
                     </div>
                 )}
 

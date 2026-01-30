@@ -24,9 +24,6 @@ const Skill = () => {
     return (
         <SkillWrap>
            <div className="inner" >
-            {/* <div className="text">
-                <p>&lt; 기술 스택 /&gt;</p>
-            </div> */}
              <div className="skillContainer" >
                 <ul className="skillList" style={{transform : `translateX(-${count}px)`}}>
                   {skills.map((skill, index)=>(
@@ -48,8 +45,6 @@ const Skill = () => {
              </div>
            </div>
         
-           {/* {pop && <SkillPop onClose={()=>setPop(false)}/>} */}
-
         </SkillWrap>
     );
 };

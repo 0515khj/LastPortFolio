@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import { ProjectPreviewWrap } from './projectDetailStyle';
-import { MdKeyboardArrowRight } from "react-icons/md";
+import { RiCloseLargeFill } from "react-icons/ri";
+import { FaCaretRight } from "react-icons/fa6";
+import { RxDividerVertical } from "react-icons/rx";
+
 
 
 const ProjectPreview = ({project,onClose}) => {
@@ -23,6 +26,7 @@ const ProjectPreview = ({project,onClose}) => {
     
     const currentImg = project.responsiveImg?.[device]?.[page] || "";
     const currentTitle = devices.find(de => de.key === device).label;
+    const test1234 = pages.find(pa => pa.key === page).label;
 
     const clickUp = (deKey, paKey)=>{
         setDevice(deKey);
@@ -46,13 +50,15 @@ const ProjectPreview = ({project,onClose}) => {
 
                     <div className="popTitle">
                         <div className="title-left">
-                            <h2>{currentTitle}</h2>
-                            {/* <MdKeyboardArrowRight /> */}
-                            {/* <h4></h4> */}
+                            <h2>반응형 웹 </h2>
+                            <i><RxDividerVertical /></i>
+                            <h3>{currentTitle}</h3>
+                            <i><FaCaretRight /></i>
+                            <h4>{test1234}</h4>
                         </div>
                         <div className="title-right">
                             <button className='close-btn' onClick={onClose}>
-                                X
+                                <RiCloseLargeFill />
                             </button>
                         </div>
                     </div>

@@ -63,7 +63,12 @@ const ProjectDetail = () => {
                         )}
                     </div>
                     <div className="mini-btn">
-                        <button className='figma-btn'>피그마 시안</button>
+                        {project.urls.figma && (
+                            <button className='figma-btn'
+                            onClick={()=> window.open(project.urls.figma, '_blank')}
+                            >피그마 시안</button>
+                        )}
+                        
                         <button className='preview-btn' onClick={()=>setModal(true)}>반응형 웹</button>
                     </div>
                 </div>

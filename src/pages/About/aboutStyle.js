@@ -148,21 +148,21 @@ export const AboutWrap = styled.div`
 
                     .period {
                         color: #9D84FF;
-                        font-size: 0.75rem;
+                        font-size: 0.875rem;
                         font-weight: 600;
                         margin-bottom: 4px;
                     }
 
                     .school {
                         color: #fff;
-                        font-size: 0.85rem;
+                        font-size: 1rem;
                         font-weight: 500;
                         margin-bottom: 3px;
                     }
 
                     .course {
                         color: #bdbdbd;
-                        font-size: 0.75rem;
+                        font-size: 0.875rem;
                         line-height: 1.4;
                     }
 
@@ -177,7 +177,7 @@ export const AboutWrap = styled.div`
                             margin-top: 10px;
                             .detailTitle {
                                 color: #9D84FF;
-                                font-size: 0.75rem;
+                                font-size: 0.875rem;
                                 font-weight: 600;
                                 margin-bottom: 5px;
                             }
@@ -187,7 +187,7 @@ export const AboutWrap = styled.div`
                                 margin: 0;
                                 li {
                                     color: #bdbdbd;
-                                    font-size: 0.75rem;
+                                    font-size: 0.875rem;
                                     line-height: 1.5;
                                     padding-left: 12px;
                                     position: relative;
@@ -247,14 +247,16 @@ export const AboutWrap = styled.div`
 
                 .clickHint {
                     color: #9D84FF;
-                    font-size: 0.75rem;
-                    font-style: italic;
-                    opacity: 0.7;
+                    font-size: 0.875rem;
                     margin-top: auto;
                 }
 
                 &:hover {
                     border-color: #9D84FF;
+
+                    .clickHint {
+                        color: #fff;
+                    }
                 }
             }
 

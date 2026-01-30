@@ -155,7 +155,7 @@ export const ProjectDetailWrap = styled.div`
                 img {
                     display: block;
                     box-sizing: border-box;
-                    object-fit: cover;
+                    object-fit: contain;
                     width: 100%;
                     height: 400px;
                 }
@@ -285,11 +285,26 @@ position: fixed;
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 10px;
+            color: #333;
             h2 {
                 font-size: 28px;
-                font-weight: 700;
-                color: #333;
                 margin: 0;
+            }
+            i {
+                padding-top: 10px;
+            }
+
+            h3 {
+                font-size: 22px;
+                margin: 0;
+                padding-top: 10px;
+            }
+
+            h4 {
+                font-size:  18px;
+                margin: 0;
+                padding-top: 10px;
             }
         }
 
@@ -305,7 +320,7 @@ position: fixed;
                 
                 &:hover {
                     color: #000;
-                    transform: rotate(90deg);
+                    transform: rotate(180deg);
                 }
             }
         }
@@ -350,12 +365,18 @@ position: fixed;
                 color: #999;
             }
         }
+        .tablet {
+                background: #ddd;
+            img {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
         .mobile {
-                background: #f5f5f5;
+                background: #ddd;
             img {
                 width: 50%;
-                display: block;
-                object-fit: contain;
+                margin: 0 auto;
             }
         }
     }
@@ -410,25 +431,24 @@ position: fixed;
 
     @media (max-width: 1024px) {
         .container {
-            width: 95%;
-            height: 90vh;
+            width: 90%;
+            height: 80vh;
         }
 
         .popBody {
+            width: 100%;
+            height: 100%;
             flex-direction: column;
         }
 
         .popLeft {
-            flex: 1;
             width: 100%;
             padding: 20px;
         }
 
         .popRight {
+            flex: 1;
             width: 100%;
-            height: 250px;
-            border-left: none;
-            border-top: 1px solid #eee;
             padding: 20px;
             display: flex;
             gap: 30px;
@@ -436,7 +456,6 @@ position: fixed;
             
             .menu-group {
                 margin-bottom: 0;
-                /* min-width: 200px; */
             }
         }
     }
@@ -481,7 +500,7 @@ position: fixed;
         }
     }
 
-    @media screen and (max-width:480px) {
+    @media (max-width:480px) {
         .popRight {
             display: grid;
             grid-template-columns: repeat(2,1fr);

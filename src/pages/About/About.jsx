@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AboutWrap } from './aboutStyle';
 import face from '/images/face2.png'
 import { Link } from 'react-router-dom';
@@ -15,6 +15,16 @@ const About = () => {
     const toggleEdu = (up) => {
         setActiveEdu(activeEdu === up ? null : up);
     };
+
+    useEffect(()=>{
+        if(pop){
+            document.body.style.overflow="hidden";
+        }else{
+            document.body.style.overflow="auto";
+        }
+        return ()=> document.body.style.overflow="auto";
+    },[pop])
+
 
     return (
         <AboutWrap>

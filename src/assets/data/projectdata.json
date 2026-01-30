@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "NOLJA",
+    "title": "NolJa",
     "description": " ~ Ing",
     "skills": [
       "React.js",
@@ -47,12 +47,15 @@
       "overview": "ing",
       "purpose": "ing",
       "features": [
-        "사용자 대화 내역 로컬 스토리지 저장 기능",
-        "모바일 환경을 고려한 반응형 채팅 UI"
+        "사용자 대화 내역 로컬 스토리지 저장 기능"
       ],
       "troubleshooting": "ing"
     }
   },
+
+
+
+
   {
     "id": 2,
     "title": "FILA",
@@ -66,11 +69,8 @@
     "img": [
       "/images/filaMain.png",
       "/images/filaMobileMockup.png",
-      "/images/filaMobileMockup.png",
-      "/images/filaMobileMockup.png",
-      "/images/filaMobileMockup.png",
-      "/images/filaMobileMockup.png",
-      "/images/fila.png"
+      "/images/notebookMockup.png",
+      "/images/mobileMockup3.png"
     ],
     "responsiveImg": {
       "desktop": {
@@ -93,26 +93,32 @@
       }
     },
     "details": {
-      "period": "2025.12.01 - 2025.12.07 (1주)",
+      "period": "2026.01.10 - 2026.01.16 (약 1주)",
       "type": "개인 프로젝트 (기여도 100%)",
       "role": "메인/서브 페이지 퍼블리싱, 인터랙션 구현",
       "tool": "VS Code, Figma"
     },
     "urls": {
       "github": "https://github.com/0515khj/FILA",
-      "demo": "https://fila-korea.vercel.app/"
+      "demo": "https://fila-korea.vercel.app/",
+      "figma":"https://www.figma.com/design/8INXNxfuKWCLxyzBa6QcF6/%ED%9C%A0%EB%9D%BC?node-id=0-1&m=dev&t=SBH12prOayjg5EtP-1"
     },
     "content": {
       "overview": "글로벌 스포츠 브랜드 FILA의 웹사이트를 재해석해 리뉴얼한 프로젝트입니다.",
-      "purpose": "기존 사이트는 과도하게 큰 이미지와 SNS같은 레이아웃으로 인해 실제 상품 정보보다 브랜드 이미지만 부각되어 '쇼핑' 이라는 본질적인 기능이 약하다고 판단했습니다.이에 상품 판매에 불 필요한 부분을 제거하고 상품 리스트와 스타일링을 직관적으로 배치하여 구매로 이어지는 사이트로 리뉴얼 했습니다.",
+      "purpose": "기존 사이트는 과도하게 큰 이미지와 SNS같은 레이아웃으로 인해 실제 상품 정보보다 브랜드 이미지만 부각되어 '쇼핑' 이라는 본질적인 기능이 약하다고 판단했습니다. 이에 상품 판매에 불 필요한 부분을 제거하고 상품 리스트와 스타일링을 직관적으로 배치하여 구매로 이어지는 사이트로 리뉴얼 했습니다.",
       "features": [
+        "웹 표준 및 웹 접근성을 고려한 시맨틱 마크업",
         "Swiper.js를 커스텀하여 슬라이더 제작",
-        "CSS Grid를 활용한 비대칭 레이아웃 디자인",
-        "웹 표준 및 웹 접근성을 고려한 시맨틱 마크업"
+        "카테고리별 상품 필터링 기능 구현",
+        "아코디언 메뉴 인터랙션 구현"
       ],
-      "troubleshooting": "어떻게 쓸지 고민중"
+      "troubleshooting": "탭 메뉴 마다 반복되는 코드 중복을 해결하기 위해, data 속성값을 매개변수로 전달받는 공통 함수를 만들어 재사용성을 높였습니다."
     }
   },
+
+
+
+
   {
     "id": 3,
     "title": "LEESLE",
@@ -131,22 +137,22 @@
     ],
     "responsiveImg": {
       "desktop": {
-        "main": "/images/leesle.png",
-        "cs": "",
-        "sub": "",
-        "login": ""
+        "main": "/images/DeskMain.png",
+        "cs": "/images/DeskCs.png",
+        "sub": "/images/DeskSub.png",
+        "login": "/images/Desklojo.png"
       },
       "tablet": {
-        "main": "/images/leesle.png",
-        "cs": "",
-        "sub": "",
-        "login": ""
+        "main": "/images/leesleTaMain.png",
+        "cs": "/images/leesleTaCs.png",
+        "sub": "/images/leesleTaSu.png",
+        "login": "/images/leesleTalojo.png"
       },
       "mobile": {
-        "main": "/images/leesle.png",
-        "cs": "",
-        "sub": "",
-        "login": ""
+        "main": "/images/mobileMain.png",
+        "cs": "/images/mobileCs.png",
+        "sub": "/images/mobileSub.png",
+        "login": "/images/mobilelojo.png"
       }
     },
     "details": {
@@ -157,19 +163,25 @@
     },
     "urls": {
       "github": "https://github.com",
-      "demo": "https://netlify.com"
+      "demo": "https://leesle.vercel.app/",
+      "figma":"https://www.figma.com/design/HvJI8zSjP2b5DNdwHCkWjm/%EB%A6%AC%EC%8A%AC-%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=0-1&m=dev&t=JzyercDcxYw1zB0i-1"
     },
     "content": {
-      "overview": "전통과 현대가 만나는 모던 한복 브랜드 '리슬'의 쇼핑몰 웹 사이트 구현입니다.",
-      "purpose": "한국적인 미를 살리면서도 쇼핑몰 본연의 기능인 '상품 가독성'을 높이는 데 주력했습니다. jQuery를 활용하여 동적인 메뉴와 탭 기능을 구현하여 사용자 경험을 높였습니다.",
+      "overview": "전통과 현대가 만나는 모던 한복 브랜드 '리슬'의 쇼핑몰 웹 사이트 리뉴얼 구현입니다.",
+      "purpose": "한국적인 미를 살리면서도 쇼핑몰 본연의 기능인 '상품 가독성'을 높이는 데 주력했습니다.  jQuery를 활용하여 동적인 메뉴와 탭 기능을 구현하여 사용자 경험을 높였습니다.",
       "features": [
         "jQuery를 이용한 아코디언 메뉴 및 탭 컨텐츠 구현",
         "마우스 호버 시 상품 정보가 나타나는 카드 UI",
-        "브라우저 크기에 따라 레이아웃이 변하는 적응형 웹"
+        "브라우저 크기에 따라 레이아웃이 변하는 반응형 웹",
+        "헤더, 푸터 공통 레이아웃 모듈화"
       ],
-      "troubleshooting": "어떻게 쓸지 고민중"
+      "troubleshooting": "헤더와 푸터를 공통 파일로 분리하여 작업하던 중 발생한클릭 인식 오류를 $(document).on 메서드를 활용하여 해결했습니다."
     }
   },
+
+
+
+
   {
     "id": 4,
     "title": "Oblique Table",
