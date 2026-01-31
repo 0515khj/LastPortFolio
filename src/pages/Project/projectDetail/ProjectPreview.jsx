@@ -19,9 +19,10 @@ const ProjectPreview = ({project,onClose}) => {
     
     const pages = [
         {key:'main', label:'메인페이지'},
-        {key:'cs', label:'고객센터'},
-        {key:'sub', label:'서브페이지'},
         {key:'login', label:'로그인/회원가입'},
+        {key:'sub', label:'서브페이지'},
+        {key:'detail', label:'상세페이지'},
+        {key:'cs', label:'고객센터'},
     ]
     
     const currentImg = project.responsiveImg?.[device]?.[page] || "";

@@ -1,8 +1,10 @@
 import React from 'react';
-import { AnimationMenuWrap, CircleBackground, CloseButton, MenuContent } from './common';
+import { AnimationMenuWrap, CircleBackground, CloseButton, MenuContent, RollingBannerWrap } from './common';
 import { motion } from 'framer-motion';
 import projectData from '../../assets/data/projectdata.json';
 import { useNavigate } from 'react-router-dom';
+import { FiCornerDownRight } from "react-icons/fi";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const AnimationMenu = ({onClose}) => {
 
@@ -53,8 +55,40 @@ const AnimationMenu = ({onClose}) => {
         visible: { y: 0, opacity: 1 }
     };
 
+    const text = "HYUN'JIN PORTFOLIO ✦ HYUN'JIN PORTFOLIO ✦ HYUN'JIN PORTFOLIO ✦ HYUN'JIN PORTFOLIO ✦ ";
+
+    const textFade = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1, transition: { delay: 0.8, duration: 1 } },
+        exit: { opacity: 0 }
+    }
+
     return (
         <AnimationMenuWrap>
+
+            <RollingBannerWrap
+                as={motion.div}
+                className="top"
+                variants={textFade} initial="hidden" animate="visible" exit="exit"
+            >
+                <div className="track">
+                    <p>{text}</p>
+                    <p>{text}</p>
+                </div>
+            </RollingBannerWrap>
+
+            <RollingBannerWrap
+                as={motion.div}
+                className="bottom"
+                variants={textFade} initial="hidden" animate="visible" exit="exit"
+            >
+                <div className="track">
+                    <p>{text}</p>
+                    <p>{text}</p>
+                </div>
+            </RollingBannerWrap>
+           
+            
             <CircleBackground
                 variants={circleAnimation}
                 initial="hidden"
@@ -68,23 +102,37 @@ const AnimationMenu = ({onClose}) => {
                 exit="exit"
             >
 
-                <CloseButton onClick={onClose}>X</CloseButton>
+                <CloseButton onClick={onClose}>
+                    <i><AiOutlineCloseCircle /></i>
+                </CloseButton>
 
                 <motion.h2 
                     variants={itemVariants}
                     onClick={()=>{navigate('/'); onClose();}}
                     >HOME</motion.h2>
-                <motion.h2 variants={itemVariants}>PROJECT LIST</motion.h2>
+                <motion.h2 variants={itemVariants}>PROJECT-LIST</motion.h2>
                 <div className="list-wrap">
-                    {projectData.map((project)=>(
+                    <div className="listWrapLeft">
+                        <FiCornerDownRight />
+                    </div>
+                    <div className="listWrapRight">
+                    {projectData.map((project,index)=>(
                         <motion.p
-                            key={project.id}
-                            variants={itemVariants}
-                            onClick={()=>ProjectClick(project.id)}
+                        key={project.id}
+                        variants={itemVariants}
+                        onClick={()=>ProjectClick(project.id)}
                         >
-                            {project.title}
+                            <span className='num'>
+                                {/* 내 프로젝트가 10개 넘어가면 주석품 */}
+                                {/* {index + 1 < 10 ? `${index + 1}` : index + 1 } */}
+                                {index + 1}
+                            </span>
+                            <div className="text">
+                                {project.title}
+                            </div>
                         </motion.p>
                     ))}
+                    </div>
                 </div>
             </MenuContent>
         </AnimationMenuWrap>

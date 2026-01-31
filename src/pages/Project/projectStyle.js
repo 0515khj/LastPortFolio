@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 
 export const ProjectWrap = styled.div`
-    padding: 100px 0;
-    height: 90vh;
+    min-height: 80vh;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -15,8 +14,9 @@ export const ProjectWrap = styled.div`
         .projectTitle {
             width: 100%; height: 100%;
             text-align: center;
-            margin-bottom : 100px;
+            margin-bottom : 80px;
                 h2 {
+                    font-size: 3.2rem;
                     color: #455A64;
                     span {color: #fff;}
                 }
@@ -24,7 +24,7 @@ export const ProjectWrap = styled.div`
 
     .hoverImgOn {
             z-index: 99;
-            animation: fadeIn 0.5s ease;
+            animation: fadeIn 0.5s ease-in-out;
 
         img {
             width: 350px; height: 200px;
@@ -42,13 +42,28 @@ export const ProjectWrap = styled.div`
             width: 100%;
             display: grid;
             grid-template-columns: repeat(2,1fr);
-            gap: 30px;
+            gap: 60px 40px;
+
+            h4 {
+                color:#fff;
+                font-weight: 700;
+                font-size: 1.8rem;
+            }
+            p {
+                color: #CBD5E1;
+                font-size:2.2rem;
+            }
 
         .skills {
             display: flex;
-            gap: 20px;
+            flex-wrap: wrap; 
+            align-items: center;
+            gap: 10px; 
             span {
-                position: relative;
+                font-size: 1.3rem; 
+                display: flex;       
+                align-items: center;
+                opacity: 0.8;
                 &::after{
                     content: '';
                     display: block;
@@ -56,11 +71,7 @@ export const ProjectWrap = styled.div`
                     height: 4px;
                     border-radius: 50%;
                     background: #999;
-                    position: absolute;
-                    top: 50%;left:115%;
-                }
-                &:nth-of-type(3)::after{
-                    left: 110%;
+                    margin-left: 10px;
                 }
                 &:last-child::after{
                     display: none;
@@ -70,7 +81,7 @@ export const ProjectWrap = styled.div`
         .boxP {
             width: 100%;
             border-radius: 20px;
-            padding: 20px 10px;
+            padding: 20px 30px;
             cursor: pointer;
 
     &:nth-child(1) {
@@ -162,7 +173,7 @@ export const ProjectWrap = styled.div`
 }
 @media screen and (max-width:768px) {
     .inner .projectBox {
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr;
     }
 }
 

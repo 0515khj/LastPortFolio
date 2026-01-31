@@ -33,15 +33,16 @@ export const ProjectDetailWrap = styled.div`
 
 
             .title {
-                font-size: 4.5rem;
+                font-size: 7.2rem;
                 font-weight: 800;
                 margin-bottom: 20px;
                 line-height: 1.1;
+                letter-spacing: 2px;
                 text-shadow: 0 10px 30px rgba(0,0,0,0.5);
             }
 
             .desc {
-                font-size: 1.5rem;
+                font-size: 1.8rem;
                 color: #cbd5e1;
                 max-width: 600px;
                 margin-bottom: 30px;
@@ -58,7 +59,7 @@ export const ProjectDetailWrap = styled.div`
                     border: 1px solid rgba(96, 165, 250, 0.3);
                     color: #60a5fa;
                     border-radius: 50px;
-                    font-size: 0.9rem;
+                    font-size: 1.2rem;
                     font-weight: 600;
                     backdrop-filter: blur(4px);
                 }
@@ -69,9 +70,9 @@ export const ProjectDetailWrap = styled.div`
                 gap: 15px;
                 
                 button {
-                    padding: 15px 40px;
+                    padding: 10px 30px;
                     border-radius: 50px;
-                    font-size: 1.1rem;
+                    font-size: 1.6rem;
                     font-weight: 700;
                     transition: transform 0.2s;
                     
@@ -87,12 +88,12 @@ export const ProjectDetailWrap = styled.div`
             .mini-btn {
                 display: flex;
                 gap: 20px;
-                margin-top: 50px;
+                margin-top: 40px;
 
                 button {
                     padding: 5px 20px;
                     border-radius: 50px;
-                    font-size: 0.8rem;
+                    font-size: 1.2rem;
                     font-weight: 700;
                     transition: transform 0.2s;
                     background: transparent; border: 2px solid #fff; color: #fff;
@@ -102,7 +103,11 @@ export const ProjectDetailWrap = styled.div`
                     }
                 }
 
-                .figma-btn {}
+                .figma-btn {
+                    background: #fff;
+                    color: #000;
+                    font-weight: 900;
+                }
                 .preview-btn {}
             }
             
@@ -117,6 +122,12 @@ export const ProjectDetailWrap = styled.div`
             max-width: 1300px;
             margin: 0 auto;
             padding: 0 20px;
+        }
+        .gallery-area {
+            
+            h2 {
+                padding-left: 6px;
+            }
         }
 
         .info-grid {
@@ -135,14 +146,14 @@ export const ProjectDetailWrap = styled.div`
                 &:nth-of-type(4){padding-left: 100px;}
 
                 h3 {
-                    font-size: 0.85rem;
+                    font-size: 1.4rem;
                     color: #60a5fa; /* 포인트 컬러 */
                     margin-bottom: 12px;
                     letter-spacing: 1px;
                     text-transform: uppercase;
                 }
                 p {
-                    font-size: 1rem;
+                    font-size: 1.6rem;
                     color: #e2e8f0;
                     font-weight: 500;
                     line-height: 1.5;
@@ -170,37 +181,40 @@ export const ProjectDetailWrap = styled.div`
 
             .text-group {
                 h2 {
-                    font-size: 2.5rem;
+                    font-size: 3.2rem;
                     margin-bottom: 30px;
+                    padding-left: 5px;
                     color: #fff;
                 }
+                .main-desc {
+                    font-size: 2.4rem;
+                    color: #fff;
+                    margin-bottom: 70px;
+                    font-weight: 600;
+                }
                 h3 {
-                    font-size: 1.5rem;
+                    font-size: 2.2rem;
                     color: #94a3b8;
                     margin-bottom: 20px;
                     margin-top: 10px;
                 }
                 p {
-                    font-size: 1.1rem;
+                    font-size: 1.6rem;
+                    padding-left: 5px;
                     line-height: 1.8;
                     color: #cbd5e1;
                     white-space: pre-line;
                 }
-                .main-desc {
-                    font-size: 1.3rem;
-                    color: #fff;
-                    margin-bottom: 40px;
-                    font-weight: 600;
-                }
+                
             }
 
             .feature-list {
                 list-style: none;
                 li {
                     position: relative;
-                    padding-left: 20px;
+                    padding-left: 30px;
                     margin-bottom: 15px;
-                    font-size: 1.1rem;
+                    font-size: 1.6rem;
                     color: #cbd5e1;
                     &::before {
                         content: '•';
@@ -208,6 +222,7 @@ export const ProjectDetailWrap = styled.div`
                         left: 0;
                         color: #60a5fa; 
                         font-weight: bold;
+                        padding-left: 10px;
                     }
                 }
             }

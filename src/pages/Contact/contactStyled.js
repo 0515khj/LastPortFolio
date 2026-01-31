@@ -9,6 +9,7 @@ export const ContactWrap = styled.div`
     h2 {
         text-align: center;
          color: #455A64;
+         margin-bottom: 70px;
         span {
             color: #fff;
         }

@@ -9,9 +9,9 @@ export const AboutWrap = styled.div`
 
         .aboutTitle {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 70px;
             h2 {
-                font-size: 2rem;
+                font-size: 3.2rem;
                 color: #455A64;
                 span {
                     color: #fff;
@@ -97,7 +97,7 @@ export const AboutWrap = styled.div`
                     }
 
                     h3 {
-                        font-size: 0.95rem;
+                        font-size: 1.6rem;
                         color: #fff;
                         font-weight: 600;
                     }
@@ -110,7 +110,7 @@ export const AboutWrap = styled.div`
 
                     p {
                         color: #bdbdbd;
-                        font-size: 0.85rem;
+                        font-size: 1.2rem;
                         line-height: 1.6;
                     }
                 }
@@ -148,21 +148,21 @@ export const AboutWrap = styled.div`
 
                     .period {
                         color: #9D84FF;
-                        font-size: 0.875rem;
+                        font-size: 1.2rem;
                         font-weight: 600;
                         margin-bottom: 4px;
                     }
 
                     .school {
                         color: #fff;
-                        font-size: 1rem;
+                        font-size: 1.4rem;
                         font-weight: 500;
                         margin-bottom: 3px;
                     }
 
                     .course {
                         color: #bdbdbd;
-                        font-size: 0.875rem;
+                        font-size: 1.4rem;
                         line-height: 1.4;
                     }
 
@@ -177,7 +177,7 @@ export const AboutWrap = styled.div`
                             margin-top: 10px;
                             .detailTitle {
                                 color: #9D84FF;
-                                font-size: 0.875rem;
+                                font-size: 1.6rem;
                                 font-weight: 600;
                                 margin-bottom: 5px;
                             }
@@ -187,7 +187,7 @@ export const AboutWrap = styled.div`
                                 margin: 0;
                                 li {
                                     color: #bdbdbd;
-                                    font-size: 0.875rem;
+                                    font-size: 1.2rem;
                                     line-height: 1.5;
                                     padding-left: 12px;
                                     position: relative;
@@ -234,7 +234,7 @@ export const AboutWrap = styled.div`
                         color: #9D84FF;
                         padding: 5px 10px;
                         border-radius: 20px;
-                        font-size: 0.75rem;
+                        font-size: 1.2rem;
                         border: 1px solid rgba(157, 132, 255, 0.3);
                         transition: all 0.2s;
 
@@ -247,7 +247,7 @@ export const AboutWrap = styled.div`
 
                 .clickHint {
                     color: #9D84FF;
-                    font-size: 0.875rem;
+                    font-size: 1.4rem;
                     margin-top: auto;
                 }
 
@@ -274,14 +274,14 @@ export const AboutWrap = styled.div`
                 h2 {
                     font-family: "Schoolbell", cursive;
                     font-weight: 100;
-                    font-size: 1.6rem;
+                    font-size: 2.2rem;
                     color: #9D84FF;
                 }
 
                 .bio {
                   color: #bdbdbd;
                   line-height: 24px;
-                  font-size: 0.9rem;
+                  font-size: 1.4rem;
                   margin-bottom: 12px;
                 }
 
@@ -313,7 +313,7 @@ export const AboutWrap = styled.div`
                         background: none;
                         border: none;
                         cursor: pointer;
-                        font-size: 0.85rem;
+                        font-size: 1.4rem;
                         padding: 5px 0;
 
                         &:hover {

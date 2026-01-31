@@ -17,18 +17,21 @@
         "main": "",
         "cs": "",
         "sub": "",
+        "detail": "",
         "login": ""
       },
       "tablet": {
         "main": "",
         "cs": "",
         "sub": "",
+        "detail": "",
         "login": ""
       },
       "mobile": {
         "main": "",
         "cs": "",
         "sub": "",
+        "detail": "",
         "login": ""
       }
     },
@@ -77,23 +80,26 @@
         "main": "/images/filaAll.png",
         "cs": "/images/csPage.png",
         "sub": "/images/subPage.png",
+        "detail": "/images/filaDeskDetail.png",
         "login": "/images/lojoPage.png"
       },
       "tablet": {
-        "main": "/images/TaMain.png",
-        "cs": "/images/TaCs.png",
-        "sub": "/images/TaSub.png",
-        "login": "/images/Talojo.png"
+        "main": "/images/filaTaMain.png",
+        "cs": "/images/filaTaCs.png",
+        "sub": "/images/filaTaSub.png",
+        "detail": "/images/filaTaDetail.png",
+        "login": "/images/filaTaLojo.png"
       },
       "mobile": {
-        "main": "/images/MoMain.png",
-        "cs": "/images/MoCs.png",
-        "sub": "/images/MoSub.png",
-        "login": "/images/MolojoPage.png"
+        "main": "/images/MoMain2.png",
+        "cs": "/images/MoCs2.png",
+        "sub": "/images/MoSub2.png",
+        "detail": "/images/MoDetail.png",
+        "login": "/images/Molojo2.png"
       }
     },
     "details": {
-      "period": "2026.01.10 - 2026.01.16 (약 1주)",
+      "period": "2026.01.19 - 2026.01.26 (약 1주)",
       "type": "개인 프로젝트 (기여도 100%)",
       "role": "메인/서브 페이지 퍼블리싱, 인터랙션 구현",
       "tool": "VS Code, Figma"
@@ -110,7 +116,8 @@
         "웹 표준 및 웹 접근성을 고려한 시맨틱 마크업",
         "Swiper.js를 커스텀하여 슬라이더 제작",
         "카테고리별 상품 필터링 기능 구현",
-        "아코디언 메뉴 인터랙션 구현"
+        "아코디언 메뉴 인터랙션 구현",
+        "JSON 데이터를 활용한 상품 리스트 동적 렌더링 구현"
       ],
       "troubleshooting": "탭 메뉴 마다 반복되는 코드 중복을 해결하기 위해, data 속성값을 매개변수로 전달받는 공통 함수를 만들어 재사용성을 높였습니다."
     }
@@ -140,18 +147,21 @@
         "main": "/images/DeskMain.png",
         "cs": "/images/DeskCs.png",
         "sub": "/images/DeskSub.png",
+        "detail": "",
         "login": "/images/Desklojo.png"
       },
       "tablet": {
         "main": "/images/leesleTaMain.png",
         "cs": "/images/leesleTaCs.png",
         "sub": "/images/leesleTaSu.png",
+        "detail": "",
         "login": "/images/leesleTalojo.png"
       },
       "mobile": {
         "main": "/images/mobileMain.png",
         "cs": "/images/mobileCs.png",
         "sub": "/images/mobileSub.png",
+        "detail": "",
         "login": "/images/mobilelojo.png"
       }
     },
@@ -201,18 +211,21 @@
         "main": "/images/oble.png",
         "cs": "",
         "sub": "",
+        "detail": "",
         "login": ""
       },
       "tablet": {
         "main": "/images/oble.png",
         "cs": "",
         "sub": "",
+        "detail": "",
         "login": ""
       },
       "mobile": {
         "main": "/images/oble.png",
         "cs": "",
         "sub": "",
+        "detail": "",
         "login": ""
       }
     },
