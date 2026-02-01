@@ -55,7 +55,7 @@ const AnimationMenu = ({onClose}) => {
         visible: { y: 0, opacity: 1 }
     };
 
-    const text = "HYUN'JIN PORTFOLIO ✦ HYUN'JIN PORTFOLIO ✦ HYUN'JIN PORTFOLIO ✦ HYUN'JIN PORTFOLIO ✦ ";
+    const text = "HYUN'JIN PORTFOLIO HYUN'JIN PORTFOLIO HYUN'JIN PORTFOLIO HYUN'JIN PORTFOLIO ";
 
     const textFade = {
         hidden: { opacity: 0 },

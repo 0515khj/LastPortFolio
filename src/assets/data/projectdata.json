@@ -147,26 +147,26 @@
         "main": "/images/DeskMain.png",
         "cs": "/images/DeskCs.png",
         "sub": "/images/DeskSub.png",
-        "detail": "",
+        "detail": "/images/LeDeDetail.png",
         "login": "/images/Desklojo.png"
       },
       "tablet": {
         "main": "/images/leesleTaMain.png",
         "cs": "/images/leesleTaCs.png",
         "sub": "/images/leesleTaSu.png",
-        "detail": "",
+        "detail": "/images/LeTaDetail.png",
         "login": "/images/leesleTalojo.png"
       },
       "mobile": {
         "main": "/images/mobileMain.png",
         "cs": "/images/mobileCs.png",
         "sub": "/images/mobileSub.png",
-        "detail": "",
+        "detail": "/images/LeMoDetail.png",
         "login": "/images/mobilelojo.png"
       }
     },
     "details": {
-      "period": "2025.11.10 - 2025.11.17 (1주)",
+      "period": "2026.01.12 - 2026.01.17 (약 1주)",
       "type": "반응형 웹 구현",
       "role": "퍼블리싱, 스크립트 구현",
       "tool": "VS Code, Figma"
@@ -195,7 +195,7 @@
   {
     "id": 4,
     "title": "Oblique Table",
-    "description": "가구 브랜드 오블리크테이블 쇼핑몰 구현",
+    "description": "가구 브랜드 오블리크테이블 웹사이트 리뉴얼",
     "skills": [
       "HTML5",
       "SCSS",
@@ -208,36 +208,37 @@
     ],
     "responsiveImg": {
       "desktop": {
-        "main": "/images/oble.png",
-        "cs": "",
-        "sub": "",
-        "detail": "",
-        "login": ""
+        "main": "/images/ObleDeMain.png",
+        "cs": "/images/ObleDeCs.png",
+        "sub": "/images/ObleDeSub.png",
+        "detail": "/images/ObleDeDetail.png",
+        "login": "/images/ObleDeLojo.png"
       },
       "tablet": {
-        "main": "/images/oble.png",
-        "cs": "",
-        "sub": "",
-        "detail": "",
-        "login": ""
+        "main": "/images/ObleTaMain.png",
+        "cs": "/images/ObleTaCs.png",
+        "sub": "/images/ObleTaSub.png",
+        "detail": "/images/ObleTaDetail.png",
+        "login": "/images/ObleTaLojo.png"
       },
       "mobile": {
-        "main": "/images/oble.png",
-        "cs": "",
-        "sub": "",
-        "detail": "",
-        "login": ""
+        "main": "/images/ObleMoMain.png",
+        "cs": "/images/ObleMoCs.png",
+        "sub": "/images/ObleMoSub.png",
+        "detail": "/images/ObleMoDetail.png",
+        "login": "/images/ObleMoLojo.png"
       }
     },
     "details": {
-      "period": "2025.11.10 - 2025.11.14 (4일)",
+      "period": "2025.12.22 - 2025.12.24 (3일)",
       "type": "쇼핑몰 웹사이트 디자인 & 퍼블리싱",
       "role": "메인/상세 페이지 퍼블리싱, 인터랙션 구현",
       "tool": "VS Code, Figma"
     },
     "urls": {
       "github": "https://github.com/0515khj/oble",
-      "demo": "https://oble.vercel.app/"
+      "demo": "https://oble.vercel.app/",
+      "figma":"https://www.figma.com/design/QzN4ZlnQWxKCE0t3RhN72s/%EC%98%A4%EB%B8%94%EB%A6%AC%ED%81%AC%ED%85%8C%EC%9D%B4%EB%B8%94?node-id=0-1&m=dev&t=fnMaMgEe1FLHYwiS-1"
     },
     "content": {
       "overview": "미니멀 가구 브랜드 오블리크테이블의 쇼핑몰 메인 및 상품 상세 페이지를 구현한 프로젝트입니다.",

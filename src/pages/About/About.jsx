@@ -164,13 +164,13 @@ const About = () => {
                             </div>
 
 
-                            <Link to="https://www.notion.so/TEST-2bb0990bbdb8802c8ec8cd5874f70a38?source=copy_link" target="_blank">
+                            {/* <Link to="https://www.notion.so/TEST-2bb0990bbdb8802c8ec8cd5874f70a38?source=copy_link" target="_blank"> */}
                                 <div className="btn">
                                     <button>상세 프로필 보기</button>
                                     <div className="line line1"></div>
                                     <div className="line line2"></div>
                                 </div>
-                            </Link>
+                            {/* </Link> */}
                         </div>
                     </div>
                 </div>
