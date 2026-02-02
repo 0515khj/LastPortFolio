@@ -11,6 +11,7 @@ export const ProjectWrap = styled.div`
         width: 90%;
         max-width: 1200px;
         margin: 0 auto;
+        
         .projectTitle {
             width: 100%; height: 100%;
             text-align: center;
@@ -88,8 +89,8 @@ export const ProjectWrap = styled.div`
         background: linear-gradient(
             to bottom left,
             rgba(30, 80, 150, 0.1) 0%,
-            rgba(20, 60, 120, 0.05) 50%,
-            rgba(10, 40, 80, 0.02) 100%
+            rgba(20, 60, 120, 0.1) 50%,
+            rgba(10, 40, 80, 0.3) 100%
         );
         border: 1px solid rgba(30, 80, 150, 0.5);
         
@@ -108,8 +109,8 @@ export const ProjectWrap = styled.div`
         background: linear-gradient(
             to bottom left,
             rgba(100, 60, 150, 0.1) 0%,
-            rgba(80, 50, 120, 0.05) 50%,
-            rgba(50, 30, 80, 0.02) 100%
+            rgba(80, 50, 120, 0.1) 50%,
+            rgba(50, 30, 80, 0.3) 100%
         );
         border: 1px solid rgba(100, 60, 150, 0.5);
         
@@ -128,8 +129,8 @@ export const ProjectWrap = styled.div`
         background: linear-gradient(
             to bottom left,
             rgba(120, 50, 50, 0.1) 0%,
-            rgba(90, 40, 40, 0.05) 50%,
-            rgba(60, 30, 30, 0.02) 100%
+            rgba(90, 40, 40, 0.1) 50%,
+            rgba(60, 30, 30, 0.3) 100%
         );
         border: 1px solid rgba(120, 50, 50, 0.5);
         
@@ -148,8 +149,8 @@ export const ProjectWrap = styled.div`
         background: linear-gradient(
             to bottom left,
             rgba(20, 120, 100, 0.1) 0%,
-            rgba(15, 90, 80, 0.05) 50%,
-            rgba(10, 60, 50, 0.02) 100%
+            rgba(15, 90, 80, 0.1) 50%,
+            rgba(10, 60, 50, 0.3) 100%
         );
         border: 1px solid rgba(20, 120, 100, 0.5);
         
@@ -161,6 +162,26 @@ export const ProjectWrap = styled.div`
                 rgba(10, 60, 50, 0.2) 100%
             );
             border: 1px solid rgba(20, 120, 100, 0.5);
+        }
+    }
+
+    &:nth-child(5) {
+        background: linear-gradient(
+           to bottom left,
+            rgba(160, 40, 100, 0.1) 0%,
+            rgba(130, 30, 80, 0.1) 50%,
+            rgba(90, 20, 50, 0.4) 100%
+        );
+        border: 1px solid rgba(160, 40, 100, 0.5);
+        
+        &:hover {
+            background: linear-gradient(
+                to bottom left,
+                rgba(160, 40, 100, 0.6) 0%,
+                rgba(130, 30, 80, 0.4) 50%,
+                rgba(90, 20, 50, 0.2) 100%
+            );
+            border: 1px solid rgba(160, 40, 100, 0.5);
         }
     }
             

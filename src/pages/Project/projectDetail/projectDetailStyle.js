@@ -11,6 +11,7 @@ export const ProjectDetailWrap = styled.div`
         height: 85vh; 
         background-size: 80%;
         background-position: center;
+        background-size: cover;
         position: relative;
         display: flex;
         align-items: flex-end; 

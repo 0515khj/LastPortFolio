@@ -60,9 +60,6 @@ const Project = () => {
                     ))}
                 </div>
 
-             
-
-
                 {hoverImg && (
                     <div className='hoverImgOn'
                     style={{
@@ -76,9 +73,6 @@ const Project = () => {
                         <img src={hoverImg.img[1]} alt={hoverImg.title} />
                     </div>
                 )}
-
-
-
 
             </div>
         </ProjectWrap>

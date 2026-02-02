@@ -83,7 +83,7 @@ export const RollingBannerWrap = styled.div`
         
         p {
             /* font-family: 'Impact',sans-serif; */
-            font-size: 10rem;
+            font-size: 11rem;
             font-weight: 700;
             margin: 0;
             padding-right: 50px;
@@ -94,13 +94,13 @@ export const RollingBannerWrap = styled.div`
     }
 
     &.top {
-        top: -5.5vh;
+        top: -5.2vh;
         .track {
             animation: ${flowLeft} 50s linear infinite;
         }
     }
     &.bottom {
-        bottom: -4vh;
+        bottom: -3.5vh;
         .track {
             animation: ${flowRight} 50s linear infinite;
         }
@@ -142,8 +142,10 @@ export const MenuContent = styled(motion.div)`
         transition: 0.3s;
         color: transparent;
         font-weight: 700;
-        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
         
+        &:nth-of-type(2) {
+        }
         &:nth-of-type(2):hover {
             cursor: inherit;
 
@@ -166,8 +168,7 @@ export const MenuContent = styled(motion.div)`
         }
         .listWrapRight{
             
-            
-            p {
+           > div {
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 font-size: 2.2rem;
                 margin: 10px 0;
@@ -176,7 +177,7 @@ export const MenuContent = styled(motion.div)`
                 text-align: left;
                 color: transparent;
                 letter-spacing: 2px;
-                -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
+                -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
                 display: flex;
             
                 &:hover { 
@@ -196,7 +197,7 @@ export const MenuContent = styled(motion.div)`
             }
             .num {
                 margin-right: 10px;
-                padding: 5px 10px;
+                padding: 4px 10px;
                 font-size: 1.8rem;
                 color: #424242;
                

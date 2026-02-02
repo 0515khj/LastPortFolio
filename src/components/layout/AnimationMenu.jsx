@@ -116,21 +116,21 @@ const AnimationMenu = ({onClose}) => {
                         <FiCornerDownRight />
                     </div>
                     <div className="listWrapRight">
-                    {projectData.map((project,index)=>(
-                        <motion.p
-                        key={project.id}
-                        variants={itemVariants}
-                        onClick={()=>ProjectClick(project.id)}
-                        >
-                            <span className='num'>
-                                {/* 내 프로젝트가 10개 넘어가면 주석품 */}
-                                {/* {index + 1 < 10 ? `${index + 1}` : index + 1 } */}
-                                {index + 1}
-                            </span>
-                            <div className="text">
-                                {project.title}
-                            </div>
-                        </motion.p>
+                      {projectData.map((project,index)=>(
+                        <motion.div
+                            key={project.id}
+                            variants={itemVariants}
+                            onClick={()=>ProjectClick(project.id)}
+                            >
+                                <span className='num'>
+                                    {/* 내 프로젝트가 10개 넘어가면 주석품 */}
+                                    {/* {index + 1 < 10 ? `${index + 1}` : index + 1 } */}
+                                    {index + 1}
+                                </span>
+                                <div className="text">
+                                    {project.title}
+                                </div>
+                        </motion.div>
                     ))}
                     </div>
                 </div>

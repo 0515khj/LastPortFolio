@@ -1,20 +1,38 @@
 import { useParams } from 'react-router-dom';
 import { ProjectDetailWrap } from './projectDetailStyle';
-import projects from '../../../assets/data/projectdata.json'
+
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import ProjectPreview from './ProjectPreview';
+
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/free-mode';
-import { useEffect, useState } from 'react';
-import ProjectPreview from './ProjectPreview';
 
 const ProjectDetail = () => {
     const {id} = useParams();
     const [modal,setModal] = useState(false);
+    const [_project, setProject] = useState([]);
+    const [targetProject, setTargetProject]= useState(null);
 
-    const project = projects.find(p => p.id === Number(id));
-    
+    useEffect(()=>{
+        const projectApi = async()=>{
+            try {
+                const response = await axios.get('/data/projectdata.json');
+                setProject(response.data);
+
+                const findProject = response.data.find(f => f.id === Number(id));
+                setTargetProject(findProject);
+
+            } catch (error) {
+                console.log(error, '에러')
+            }
+        }
+        projectApi();
+    },[id])
+
     useEffect(()=>{
             window.scrollTo(0,0)
     },[id])
@@ -28,11 +46,11 @@ const ProjectDetail = () => {
         return () => {document.body.style.overflow='auto'};
     },[modal])
 
-    if (!project) return <div style={{color:'white', textAlign:'center', paddingTop:'200px'}}>존재하지 않는 프로젝트입니다.</div>;
+    if (!targetProject) return <div style={{color:'white', textAlign:'center', paddingTop:'200px'}}>존재하지 않는 프로젝트입니다.</div>;
 
 
-    const mainBgImage = project.img[0];
-    const galleryImages = project.img.length > 1 ? project.img.slice(0) : [];
+    const mainBgImage = targetProject.img[0];
+    const galleryImages = targetProject.img.length > 1 ? targetProject.img.slice(0) : [];
 
     return (
         <ProjectDetailWrap>
@@ -41,31 +59,31 @@ const ProjectDetail = () => {
                 
                 <div className="hero-content">
                     
-                    <h1 className="title">{project.title}</h1>
-                    <p className="desc">{project.description}</p>
+                    <h1 className="title">{targetProject.title}</h1>
+                    <p className="desc">{targetProject.description}</p>
                     
                     <div className="skills-wrap">
-                        {project.skills.map((skill, idx) => (
+                        {targetProject.skills.map((skill, idx) => (
                             <span key={idx} className="badge">{skill}</span>
                         ))}
                     </div>
 
                     <div className="btn-group">
-                        {project.urls.demo && (
+                        {targetProject.urls.demo && (
                             <button className="live-btn"
-                            onClick={()=> window.open(project.urls.demo,'_blank')}
+                            onClick={()=> window.open(targetProject.urls.demo,'_blank')}
                             >Live Demo</button>
                         )}
-                        {project.urls.github && (
+                        {targetProject.urls.github && (
                             <button className="git-btn"
-                            onClick={()=> window.open(project.urls.github,'_blank')}
+                            onClick={()=> window.open(targetProject.urls.github,'_blank')}
                             >Github</button>
                         )}
                     </div>
                     <div className="mini-btn">
-                        {project.urls.figma && (
+                        {targetProject.urls.figma && (
                             <button className='figma-btn'
-                            onClick={()=> window.open(project.urls.figma, '_blank')}
+                            onClick={()=> window.open(targetProject.urls.figma, '_blank')}
                             >피그마 시안</button>
                         )}
                         
@@ -80,19 +98,19 @@ const ProjectDetail = () => {
                     <div className="info-grid">
                         <div className="info-item">
                             <h3>PROJECT TYPE</h3>
-                            <p>{project.details?.type}</p>
+                            <p>{targetProject.details?.type}</p>
                         </div>
                         <div className="info-item">
                             <h3>PERIOD</h3>
-                            <p>{project.details?.period}</p>
+                            <p>{targetProject.details?.period}</p>
                         </div>
                         <div className="info-item">
                             <h3>ROLE</h3>
-                            <p>{project.details?.role}</p>
+                            <p>{targetProject.details?.role}</p>
                         </div>
                         <div className="info-item">
                             <h3>TOOLS</h3>
-                            <p>{project.details?.tool}</p>
+                            <p>{targetProject.details?.tool}</p>
                         </div>
                     </div>
 
@@ -100,25 +118,25 @@ const ProjectDetail = () => {
                         
                         <div className="text-group">
                             <h2>Project Overview</h2>
-                            <p className="main-desc">{project.content.overview}</p>
+                            <p className="main-desc">{targetProject.content.overview}</p>
                             
                             <h3>📌 기획 의도</h3>
-                            <p>{project.content.purpose}</p>
+                            <p>{targetProject.content.purpose}</p>
                         </div>
 
                         <div className="text-group">
                             <h3>⚙️ 주요 기능 및 특징</h3>
                             <ul className="feature-list">
-                                {project.content.features.map((feature, index) => (
+                                {targetProject.content.features.map((feature, index) => (
                                     <li key={index}>{feature}</li>
                                 ))}
                             </ul>
                         </div>
 
-                        {project.content.troubleshooting && (
+                        {targetProject.content.troubleshooting && (
                             <div className="text-group">
                                 <h3>💡 문제 해결 (Troubleshooting)</h3>
-                                <p>{project.content.troubleshooting}</p>
+                                <p>{targetProject.content.troubleshooting}</p>
                             </div>
                         )}
                     </div>
@@ -145,7 +163,7 @@ const ProjectDetail = () => {
 
                     {modal && (
                         <ProjectPreview
-                            project ={project}
+                            project ={targetProject}
                             onClose={() => setModal(false)}
                         />
                     )}
