@@ -63,11 +63,14 @@
     "description": "프론트엔드 & 웹 퍼블리셔 포트폴리오",
     "skills": [
       "React.js",
-      "Styled-components"
+      "Styled-components",
+      "Framer Motion",
+      "React Router"
     ],
     "img": [
       "/images/pfMockup.png",
-      "/images/webMockup.png"
+      "/images/webMockup.png",
+      "/images/pfMockup2.png"
     ],
     "responsiveImg": {
       "desktop": {
@@ -97,9 +100,12 @@
       "overview": "다양한 프로젝트를 통해 쌓아온 퍼블리싱 역량과 기술 스택을 정리한 포트폴리오입니다.",
       "purpose": "재사용 가능한 컴포넌트 설계와 데이터 기반의 구조를 적용해 실제 현업 환경처럼 관리 효율성을 높여 제작했습니다. ",
       "features": [
-        "ㅁㄴㅇㄴㅁㅇ"
+         "JSON 데이터 기반의 동적 라우팅 및 렌더링",
+        "Custom Hook(useInterval)을 활용한 최적화",
+        "데이터 유효성 검사를 적용한 디바이스별 프리뷰 모달",
+        "Framer Motion을 활용한 인터랙티브 UI"
       ],
-      "troubleshooting": "ing"
+      "troubleshooting": "무한 롤링 배너를 구현하기 위해 setInterval을 찾아보던 중, 리액트 환경에서는 클로저(Closure) 문제로 인해 최신 상태값을 읽지 못한다는 점을 알게 되었습니다. 이를 해결하기 위해 useRef를 사용하여 최신 상태를 참조하면서도 타이머가 끊기지 않도록 돕는 useInterval 커스텀 훅을 적용했습니다."
     }
   },
 

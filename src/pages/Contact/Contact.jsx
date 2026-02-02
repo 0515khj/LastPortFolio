@@ -8,15 +8,15 @@ const Contact = () => {
             <div className="inner">
                 <ul>
                     <li>
-                        <img src="../../public/images/call.png" alt="" />
+                        <img src="/images/call.png" alt="" />
                         <p>010-6543-9118</p>
                     </li>
                     <li>
-                        <img src="../../public/images/mail.png" alt="" />
+                        <img src="/images/mail.png" alt="" />
                         <p>kh32100@naver.com</p>
                     </li>
                     <li>
-                        <img src="../../public/images/git.png" alt="" />
+                        <img src="/images/git.png" alt="" />
                         <p> <a href="https://github.com/0515khj" target='_blank'>https://github.com/0515khj</a> </p>
                     </li>
                 </ul>
