@@ -55,6 +55,8 @@ export const AnimationMenuWrap = styled.div`
     align-items: center;
     pointer-events: none; 
     > * { pointer-events: auto; }
+
+
 `
 const flowLeft = keyframes`
     0% { transform:translateX(0); }
@@ -64,7 +66,6 @@ const flowLeft = keyframes`
 const flowRight = keyframes`
     0% { transform:translateX(-50%); }
     100% { transform:translateX(0); }
-
 `
 
 export const RollingBannerWrap = styled.div`
@@ -130,22 +131,21 @@ export const MenuContent = styled(motion.div)`
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-bottom: 100px;
-   
+    padding-bottom: 150px;
     gap: 20px;
 
     h2 {
-        font-family: 'Courier New', Courier, monospace;
+        /* font-family: 'Courier New', Courier, monospace; */
         font-size: 4rem;
-        font-weight: 600;
         cursor: pointer;
         transition: 0.3s;
-        color: transparent;
-        font-weight: 700;
-        -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
-        
-        &:nth-of-type(2) {
-        }
+        /* color: transparent; */
+        color: #1a1a1a;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        /* -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3); */
+   
         &:nth-of-type(2):hover {
             cursor: inherit;
 
@@ -153,12 +153,25 @@ export const MenuContent = styled(motion.div)`
         &:nth-of-type(1):hover { 
             color: #9D84FF; 
         }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #999;
+            margin-left: 10px;
+        }
+        &:nth-of-type(2)::after {
+            display: none;
     }
+}
 
     .list-wrap {
         margin-top: 30px;
         position: absolute;
-        top: 20%; 
+        top: 15%; 
         left: 55%;
         display: flex;
         gap: 30px;
@@ -169,30 +182,19 @@ export const MenuContent = styled(motion.div)`
         .listWrapRight{
             
            > div {
-                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 font-size: 2.2rem;
                 margin: 10px 0;
                 cursor: pointer;
                 transition: 0.3s;
                 text-align: left;
-                color: transparent;
+                color: #1a1a1a;
                 letter-spacing: 2px;
-                -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+                font-weight: 700;
                 display: flex;
             
                 &:hover { 
                     color: #9D84FF; 
                     width: fit-content;
-                }
-                &:hover  {
-                    
-                    .text {
-                        border-bottom: 1.5px solid #9D84FF;
-                        
-                    }
-                }
-                .text {
-                    border-bottom: 1.5px solid transparent;
                 }
             }
             .num {
@@ -208,8 +210,8 @@ export const MenuContent = styled(motion.div)`
 
 export const CloseButton = styled.button`
     position: absolute;
-    top: -100px; 
-    right: -100px;
+    top: -150px; 
+    right: 0; 
     background: none;
     border: none;
     color: #999;
@@ -223,7 +225,7 @@ export const CloseButton = styled.button`
     }
     
     @media (max-width: 768px) {
-        top: -60px;
+        top: -150px;
         right: 0;
     }
 `;

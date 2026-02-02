@@ -102,9 +102,9 @@ const AnimationMenu = ({onClose}) => {
                 exit="exit"
             >
 
-                <CloseButton onClick={onClose}>
+                {/* <CloseButton onClick={onClose}>
                     <i><AiOutlineCloseCircle /></i>
-                </CloseButton>
+                </CloseButton> */}
 
                 <motion.h2 
                     variants={itemVariants}
@@ -115,6 +115,11 @@ const AnimationMenu = ({onClose}) => {
                     <div className="listWrapLeft">
                         <FiCornerDownRight />
                     </div>
+
+                    <CloseButton onClick={onClose}>
+                    <i><AiOutlineCloseCircle /></i>
+                    </CloseButton>
+                    
                     <div className="listWrapRight">
                       {projectData.map((project,index)=>(
                         <motion.div

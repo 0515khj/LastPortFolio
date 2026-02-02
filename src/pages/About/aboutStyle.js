@@ -387,6 +387,11 @@ export const AboutWrap = styled.div`
                     grid-row: auto;
                 }
             }
+
+             .imgBox {
+                    height: 400px;
+                }
+
         }
     }
 `

@@ -195,6 +195,7 @@ export const ProjectWrap = styled.div`
 @media screen and (max-width:768px) {
     .inner .projectBox {
         grid-template-columns:1fr;
+        gap:20px;
     }
 }
 

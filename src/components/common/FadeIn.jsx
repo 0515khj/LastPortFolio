@@ -10,7 +10,7 @@ const FadeIn = ({children, delay=0}) => {
             /* 뷰포트 설정 파트 */
             // once가 true 라면 한번만 실행
             // once가 false 라면 화면에 들어올 때마다 계속 실행
-            viewport={{once:false, amount:0.3}}
+            viewport={{once:true, amount:0.3}}
             /* 움직이는거 속도랑 시간 설정 */
             transition={{duration:0.8, delay:delay, ease:"easeOut"}}
         >   

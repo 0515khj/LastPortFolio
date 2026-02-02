@@ -239,14 +239,17 @@ export const ProjectDetailWrap = styled.div`
 
     @media (max-width: 768px) {
         .hero-section {
-            height: 70vh;
+            height: 75vh;
             .hero-content {
-                .title { font-size: 2.8rem; }
-                .desc { font-size: 1.1rem; }
+                .title { font-size: 4rem; }
+                .desc { font-size: 2.2rem; }
                 .back-btn { top: -80px; }
             }
         }
         .gallery-area .slide-item { height: 250px; }
+        .inner .info-grid .info-item {
+                &:nth-of-type(4){padding-left:0;}
+         }
     }
 `
 
@@ -486,8 +489,8 @@ position: fixed;
         .popTitle {
             padding: 0 20px;
             
-            .title-left h2 {
-                font-size: 18px;
+            .title-left h1 {
+                font-size: 500px;
             }
         }
 

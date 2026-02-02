@@ -63,35 +63,27 @@
     "description": "프론트엔드 & 웹 퍼블리셔 포트폴리오",
     "skills": [
       "React.js",
-      "Styled-components"
+      "Styled-components",
+      "Framer Motion",
+      "React Router"
     ],
     "img": [
-      "/images/mainIntro2.png",
-      "/images/mainIntro.png",
+      "/images/pfMockup.png",
       "/images/webMockup.png",
-      "/images/webMockup.png"
+      "/images/pfMockup2.png"
     ],
     "responsiveImg": {
       "desktop": {
-        "main": "",
-        "cs": "",
-        "sub": "",
-        "detail": "",
-        "login": ""
+        "main": "/images/pfDeskMain.png",
+        "detail": "/images/pfDeskDetail.png"
       },
       "tablet": {
-        "main": "",
-        "cs": "",
-        "sub": "",
-        "detail": "",
-        "login": ""
+        "main": "/images/pfTaMain.png",
+        "detail": "/images/pfTaDetail.png"
       },
       "mobile": {
-        "main": "",
-        "cs": "",
-        "sub": "",
-        "detail": "",
-        "login": ""
+        "main": "/images/pfMoMain.png",
+        "detail": "/images/pfMoDetail.png"
       }
     },
     "details": {

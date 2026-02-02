@@ -47,12 +47,12 @@
       "notion": "https://notion.so/..."
     },
     "content": {
-      "overview": "ing",
-      "purpose": "",
+      "overview": "진행중",
+      "purpose": "진행중",
       "features": [
-        "사용자 대화 내역 로컬 스토리지 저장 기능"
+        ""
       ],
-      "troubleshooting": "ing"
+      "troubleshooting": "진행중"
     }
   },
 
@@ -66,32 +66,21 @@
       "Styled-components"
     ],
     "img": [
-      "/images/mainIntro2.png",
-      "/images/mainIntro.png",
-      "/images/webMockup.png",
+      "/images/pfMockup.png",
       "/images/webMockup.png"
     ],
     "responsiveImg": {
       "desktop": {
-        "main": "",
-        "cs": "",
-        "sub": "",
-        "detail": "",
-        "login": ""
+        "main": "/images/pfDeskMain.png",
+        "detail": "/images/pfDeskDetail.png"
       },
       "tablet": {
-        "main": "",
-        "cs": "",
-        "sub": "",
-        "detail": "",
-        "login": ""
+        "main": "/images/pfTaMain.png",
+        "detail": "/images/pfTaDetail.png"
       },
       "mobile": {
-        "main": "",
-        "cs": "",
-        "sub": "",
-        "detail": "",
-        "login": ""
+        "main": "/images/pfMoMain.png",
+        "detail": "/images/pfMoDetail.png"
       }
     },
     "details": {
@@ -105,10 +94,10 @@
       "demo": "https://nicekhj-portfolio.vercel.app/"
     },
     "content": {
-      "overview": "ing",
-      "purpose": "재사용 가능한 컴포넌트 설계와 데이터 기반의 구조를 적용해 실제 현업 환경처럼 관리 효율성을 높여 제작 ",
+      "overview": "다양한 프로젝트를 통해 쌓아온 퍼블리싱 역량과 기술 스택을 정리한 포트폴리오입니다.",
+      "purpose": "재사용 가능한 컴포넌트 설계와 데이터 기반의 구조를 적용해 실제 현업 환경처럼 관리 효율성을 높여 제작했습니다. ",
       "features": [
-        ""
+        "ㅁㄴㅇㄴㅁㅇ"
       ],
       "troubleshooting": "ing"
     }

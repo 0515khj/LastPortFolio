@@ -23,11 +23,12 @@ const ProjectPreview = ({project,onClose}) => {
         {key:'sub', label:'서브페이지'},
         {key:'detail', label:'상세페이지'},
         {key:'cs', label:'고객센터'},
+        {key:'test', label:'테스트'},
     ]
     
     const currentImg = project.responsiveImg?.[device]?.[page] || "";
-    const currentTitle = devices.find(de => de.key === device).label;
-    const test1234 = pages.find(pa => pa.key === page).label;
+    const currentTitle = devices.find(de => de.key === device).label || "";
+    const pageTitle = pages.find(pa => pa.key === page).label || "";
 
     const clickUp = (deKey, paKey)=>{
         setDevice(deKey);
@@ -55,7 +56,7 @@ const ProjectPreview = ({project,onClose}) => {
                             <i><RxDividerVertical /></i>
                             <h3>{currentTitle}</h3>
                             <i><FaCaretRight /></i>
-                            <h4>{test1234}</h4>
+                            <h4>{pageTitle}</h4>
                         </div>
                         <div className="title-right">
                             <button className='close-btn' onClick={onClose}>
@@ -77,12 +78,20 @@ const ProjectPreview = ({project,onClose}) => {
                     </div>
 
                     <div className="popRight">
-                        {devices.map((de) =>(
+                        {devices.map((de) =>{
+                            const validPage = pages.filter(pa =>{
+                                const imgPath = project.responsiveImg?.[de.key]?.[pa.key];
+                                return imgPath && imgPath.trim() !== "";
+                            });
+                            if (validPage.length === 0) return null;
+
+                            return (
+
                             <div key={de.key} className='menu-group'>
                                 <h3>{de.label}</h3>
 
                                 <ul className='menu-list'>
-                                    {pages.map((pa)=>(
+                                    {validPage.map((pa)=>(
                                         <li key={pa.key}
                                         className={device === de.key && page === pa.key ? 'active':''}
                                         onClick={() => clickUp(de.key , pa.key)}
@@ -92,7 +101,8 @@ const ProjectPreview = ({project,onClose}) => {
                                     ))}
                                 </ul>
                             </div>
-                        ))}
+                            )
+                    })}
                     </div>
 
                 </div> {/* popBody end */}
