@@ -2,15 +2,14 @@
   {
     "id": 1,
     "title": "NolJa",
-    "description": " ~ Ing",
+    "description": "프로젝트 제작중",
     "skills": [
       "React.js",
       "Styled-components"
     ],
     "img": [
-      "/images/protest.png",
-      "/images/protest.png",
-      "/images/protest.png"
+      "/images/noljaIntro.png",
+      "/images/noljaIntro.png"
     ],
     "responsiveImg": {
       "desktop": {
@@ -36,21 +35,21 @@
       }
     },
     "details": {
-      "period": "2026.01.31 - 2026.02.14 (약 2주)",
+      "period": "2026.00.00 - 2026.00.00 (약 0주)",
       "type": "개인 프로젝트 (기여도 100%)",
       "role": "UI/UX 디자인, 퍼블리싱, 프론트엔드 개발, API 연동",
       "tool": "VS Code, Figma"
     },
     "urls": {
-      "github": "https://github.com/your-id/repo-name",
-      "demo": "https://your-deploy-url.com",
-      "notion": "https://notion.so/..."
+      "github": "",
+      "demo": "",
+      "notion": ""
     },
     "content": {
-      "overview": "진행중",
-      "purpose": "진행중",
+      "overview": "국내 레저 스팟을 카테고리별 지역별로 쉽게 찾고 비교할 수 있는 통합 플랫폼",
+      "purpose": "어디 놀러갈 때마다 여러 사이트를 돌아다니며 정보를 찾는 불편함을 해소하고 카테고리와 지역별로 정리된 통합 플랫폼에서 한눈에 비교하고 선택할 수 있도록 제작",
       "features": [
-        ""
+        "진행중"
       ],
       "troubleshooting": "진행중"
     }
@@ -190,10 +189,10 @@
       "Swiper.js"
     ],
     "img": [
-      "/images/leesle.png",
-      "/images/leesle.png",
-      "/images/leesle.png",
-      "/images/leesle.png"
+      "/images/leesleMockup2.png",
+      "/images/leesleMockup4.png",
+      "/images/leesleMockup.png",
+      "/images/leesleMockup3.png"
     ],
     "responsiveImg": {
       "desktop": {
@@ -256,8 +255,9 @@
       "Swiper.js"
     ],
     "img": [
-      "/images/oble.png",
-      "/images/oble.png"
+      "/images/obleMockup.png",
+      "/images/obleMockup2.png",
+      "/images/obleMockup3.png"
     ],
     "responsiveImg": {
       "desktop": {
