@@ -25,6 +25,10 @@ const About = () => {
         return ()=> document.body.style.overflow="auto";
     },[pop])
 
+    const openProfile = () =>{
+        window.open('https://www.notion.so/React-2cc0990bbdb880798f17e8134cd7d566?source=copy_link','_blank')
+    }
+
 
     return (
         <AboutWrap>
@@ -164,13 +168,11 @@ const About = () => {
                             </div>
 
 
-                            {/* <Link to="https://www.notion.so/TEST-2bb0990bbdb8802c8ec8cd5874f70a38?source=copy_link" target="_blank"> */}
-                                <div className="btn">
+                                <div className="btn" onClick={openProfile} >
                                     <button>상세 프로필 보기</button>
                                     <div className="line line1"></div>
                                     <div className="line line2"></div>
                                 </div>
-                            {/* </Link> */}
                         </div>
                     </div>
                 </div>

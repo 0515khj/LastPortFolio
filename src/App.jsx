@@ -1,10 +1,16 @@
+import React from "react";
 import {BrowserRouter, Routes , Route} from "react-router-dom";
 import GlobalStyle from './styles/Globalstyle';
 import Layout from './components/layout/Layout';
 import MouseGlow from './components/MouseGlow';
-import Main from './pages/Home/Main';
-import ProjectDetail from './pages/Project/projectDetail/ProjectDetail';
 import ScrollTop from "./components/common/ScrollTop";
+
+// import Main from './pages/Home/Main';
+// import ProjectDetail from './pages/Project/projectDetail/ProjectDetail';
+
+
+const Main = React.lazy(()=> import('./pages/Home/Main'));
+const ProjectDetail = React.lazy(()=> import('./pages/Project/projectDetail/ProjectDetail'));
 
 const App = () => {
 
